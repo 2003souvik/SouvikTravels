@@ -1,0 +1,156 @@
+<!-- input type="button" onClick="document.getElementById('middle').scrollIntoView(); -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylesheet.css">  
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/css/res.css">
+</head>
+<body id="cl">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/logo.jpg" alt="" height="30px" width="30px"></a>
+          <h4 class="lt">Souvik Travels</h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/travel.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#abt">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ss">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#c">Contact us</a>
+              </li>
+              
+              
+            </ul>
+          
+            
+            <button  id="b" class="toggle">Light</button>
+          </div>
+          
+        </div>
+      </nav>
+   
+    <section id="h"class="home">
+        <h1 id="ss">Souvik Travels</h1>
+        <button class="bt" >Subsribe</button>
+    </section>
+  
+    <div class="ser">
+        
+    <section class="service">
+        <div>
+            <img src="calcutta.jpeg" alt="Error">
+            
+        </div>
+        <div>
+            <img src="mumbai.jpeg" alt="Error">
+            
+        </div>
+        <div>
+            <img src="andaman.jpeg" alt="Error">
+           
+        </div>
+        <div>
+            <img src="kerala.jpeg" alt="Error">
+            
+        </div>
+        <div>
+            <img src="chennai.jpeg" alt="Error">
+           
+        </div>
+        <div>
+            <img src="Delhi.jpg" alt="Error">
+           
+        </div>
+    </section>
+    <section class="ac">
+        <div class="about" >
+            
+            <p id="abt">Souvik Travels, India's leading online travel company, has a profound understanding of Indian consumers travel needs and preferences. It offers a wide range of holiday packages in India and across the world, catering to various segments of travellers. While the dynamic or customized tour and travel packages give consumers an option to create and design their own holiday, the fixed departure holiday packages have a pre-designed itinerary; thus ensuring there is something to meet the holiday needs of every kind of traveller.
+                Souvik Travels offers a hassle-free holiday wherein all your travel needs are taken care of. Be it your accommodation in comfortable hotels, convenient transfers, varied sightseeing options and an array of activities to choose from, delectable meals and niche experiences - the holiday packages are designed such to offer you an unparalleled experience. Be it popular destinations such as Andaman, Kerala, Rajasthan and Kashmir, or more offbeat ones like North East, Ladakh and Uttarakhand, there are tailor-made packages for destinations from all over India. From distinctive  packages to exclusive tour packages for women, from itineraries designed for solo travellers, families with kids and for those who are young at heart - Souvik Travels has an answer to all our holiday needs.
+                
+            
+            </p>
+        </div>
+        <div id="c"class="contact">
+        <div class="input">
+            
+            <input type="text" placeholder="Enter Name">
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Enter Phone no">
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Enter Email">
+        </div>
+        <div class="button">
+            <button>Submit</button>
+        </div>
+        
+            
+        </div>
+    </section>
+    <footer class="end">
+        <div class="copy">
+            <p>Copyright © 2022 SouvikTravels.com</p>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/" target="_blank"><img src="inst.png" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="Facebook-logo.png" alt=""></a>
+        </div>
+    </footer>
+</div>
+
+<script>
+   let b=document.getElementById('b')
+   let bd=document.getElementById('cl')
+   b.addEventListener('click',tog)
+   let nodeList = document.querySelectorAll("a");
+   function tog(e)
+   {
+    if(b.textContent.includes('Light'))
+    {
+        bd.style.backgroundColor="rgb(86, 174, 185)"
+        b.textContent="Dark"
+        b.style.color="white"
+        b.style.fontWeight="bolder"
+        b.style.background="black"
+        document.getElementById('abt').style.color="black"
+        for (let i = 0; i < nodeList.length; i++) {
+       nodeList[i].style.color = "pink";
+        }
+       
+    }
+    else
+    {
+        bd.style.backgroundColor="black"
+        b.textContent="Light"
+        b.style.color="black"
+        b.style.fontWeight="bolder"
+        b.style.background="white"
+        document.getElementById('abt').style.color="rgb(202, 200, 201)"
+        for (let i = 0; i < nodeList.length; i++) {
+       nodeList[i].style.color = "white";
+        }
+       
+
+    }
+}
+   
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

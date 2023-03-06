@@ -1,0 +1,111 @@
+/* Navigation */
+body
+{
+    max-height: 200px;
+   
+}
+#b
+{
+    margin-left:150px;
+}
+
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+#navbar
+{
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+    color: antiquewhite;
+    z-index: 1;
+}
+.home
+{
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+   
+}
+.home h1
+{
+    font-size: 15px;
+}
+.btn
+{
+    font-size:10px;
+}
+.home::before
+{
+    height: 480px;
+    overflow: hidden;
+    
+    
+  
+}
+.ser h1
+{
+    color: beige;
+    margin-left: 40px;
+}
+.service
+{
+    flex-direction: column;
+}
+
+@media (max-width:470px) {
+    .home::before
+    {
+        background-size: cover;
+    }
+}
+.ac
+{
+    flex-direction: column;
+    
+}
+.about
+{
+    width: 210px;
+    margin-left: 5px;
+    
+}
+.about p
+{
+    font-size: 10px;
+    padding-right: 35px;
+}
+.button
+{
+   margin-left:20px;
+}
+.service img
+{
+    margin: 5px;
+}
+.ser
+{
+    width: 40%;
+    margin: auto;
+}
+.toggle
+{
+   margin-left: 10px;
+   border-radius: 10px;
+   padding: 5px;
+   background-color:white;
+   color: black;
+}
